@@ -121,7 +121,7 @@ export default class Bulkchange extends React.Component<IBulkchangeProps, ISecur
     let ItemInfo = await this._service.getItemByIDs(RecordId);
      this.setState({AppliName:ItemInfo.ApproverName})
     this.setState({Appid:ItemInfo.ApproverID})
-    this.setState({TitleId:ItemInfo.Title})
+    this.setState({TitleId:ItemInfo.ReqIDS})
     this.setState({Quater:ItemInfo.MyQuarter})
     this.setState({Year:ItemInfo.MyYear})
     this.setState({ApplicationName:ItemInfo.NameofList})
